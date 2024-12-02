@@ -1,0 +1,11 @@
+name: Test formacao
+on: [workflow_dispatch]
+
+jobs:
+  test-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ola
+        uses: JoaoCMSilva/hello-world-docker-action@v1
+        with:
+          who-to-greet: '@octocat'
